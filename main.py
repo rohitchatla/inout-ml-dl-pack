@@ -1,6 +1,7 @@
 from flask import * 
 from flask import jsonify
 import sentiment_mod as s
+import os
 #import main_ocr_aadhar as ocr
 
 app = Flask(__name__)  
