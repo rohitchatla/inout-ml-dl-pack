@@ -101,7 +101,6 @@ pefile==2019.4.18
 pickleshare==0.7.5
 Pillow==6.0.0
 pkginfo==1.6.1
-post==2019.4.13
 proglog==0.1.9
 prometheus-client==0.7.1
 prompt-toolkit==2.0.10
