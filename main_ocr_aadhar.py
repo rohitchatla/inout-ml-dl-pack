@@ -2,7 +2,7 @@
 # second method
 
 import pytesseract
-from PIL import Image
+#from PIL import Image
 import datetime
 import cv2
 import sys
