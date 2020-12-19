@@ -38,7 +38,6 @@ flatbuffers==1.12
 future==0.17.1
 gast==0.3.3
 gcloud==0.17.0
-get==2019.4.13
 google-auth==1.12.0
 google-auth-oauthlib==0.4.1
 google-cloud==0.34.0
