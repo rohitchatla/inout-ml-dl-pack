@@ -1,0 +1,8 @@
+Flask
+gunicorn
+flake8
+pytesseract
+opencv-python
+matplotlib
+Pillow
+base64
