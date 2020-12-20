@@ -54,7 +54,7 @@ class Text_Extractor():
         
 
         #the following command uses the tesseract directory path to get the trained data in the config option
-        pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/bin/tesseract'
+        pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/share/tesseract-ocr/4.00/tessdata'
         #tessdata_dir_config = r'--tessdata-dir "/usr/local/Cellar/tesseract/4.1.1/share/tessdata"'
         #text=pytesseract.image_to_string(img,lang='eng',config=tessdata_dir_config)
         text=pytesseract.image_to_string(img) #,config='--tessdata-dir "/usr/local/Cellar/tesseract/4.0.0_1/share/tessdata"'
