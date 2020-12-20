@@ -57,7 +57,8 @@ class Text_Extractor():
         pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/share/tesseract-ocr/4.00/tessdata'
         #tessdata_dir_config = r'--tessdata-dir "/usr/local/Cellar/tesseract/4.1.1/share/tessdata"'
         #text=pytesseract.image_to_string(img,lang='eng',config=tessdata_dir_config)
-        text=pytesseract.image_to_string(img, lang='eng', config='--tessdata-dir "/app/.apt/usr/share/tesseract-ocr/4.00/tessdata"') #,config='--tessdata-dir "/usr/local/Cellar/tesseract/4.0.0_1/share/tessdata"'
+        #text=pytesseract.image_to_string(img, lang='eng', config='--tessdata-dir "/app/.apt/usr/share/tesseract-ocr/4.00/tessdata"') #,config='--tessdata-dir "/usr/local/Cellar/tesseract/4.0.0_1/share/tessdata"'
+        text='example'
         return text
     
 #class to validate if  an image is a adhar card where the text is passed as an argument
@@ -147,11 +148,11 @@ def main(filename,file):
              sys.exit(1)
        te=Text_Extractor(image_file_name,file)
        text=te.extract_text()
-       # print(text)
+       print(text)
        # initializing bad_chars_list
-       test_string=cleaning(text)
+       '''test_string=cleaning(text)
        #print(test_string)
        acv=Aadhar_Card_Validator(test_string)
        details=acv.is_aadhar_card()
-       return details
+       return details '''
 #main()
