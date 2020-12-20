@@ -57,7 +57,7 @@ class Text_Extractor():
         pytesseract.pytesseract.tesseract_cmd = '/app/.apt/usr/share/tesseract-ocr/4.00/tessdata'
         #tessdata_dir_config = r'--tessdata-dir "/usr/local/Cellar/tesseract/4.1.1/share/tessdata"'
         #text=pytesseract.image_to_string(img,lang='eng',config=tessdata_dir_config)
-        text=pytesseract.image_to_string(img) #,config='--tessdata-dir "/usr/local/Cellar/tesseract/4.0.0_1/share/tessdata"'
+        text=pytesseract.image_to_string(img, lang='eng') #,config='--tessdata-dir "/usr/local/Cellar/tesseract/4.0.0_1/share/tessdata"'
         return text
     
 #class to validate if  an image is a adhar card where the text is passed as an argument
