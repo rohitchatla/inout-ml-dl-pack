@@ -5,7 +5,8 @@ import os
 import main_ocr_aadhar as ocr
 
 app = Flask(__name__)  
-  
+cors = CORS(app,resources={r"/api/*": {"origins": "*"}}) 
+
 @app.route('/sentiment',methods=['POST', 'GET']) 
 def sentiment():
 	if request.method == 'POST':
